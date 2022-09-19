@@ -16,7 +16,16 @@ struct textField: ViewModifier {
         content
             .frame(width: textFieldWidth, height: textFieldHeight, alignment: .center)
             .padding(10)
-            .textFieldStyle(.roundedBorder)
+            .textFieldStyle(CustomTextFieldStyle())
+            .foregroundColor(Color("input"))
+    }
+}
+
+struct CustomTextFieldStyle: TextFieldStyle {
+    func _body(configuration: TextField<Self._Label>) -> some View {
+        configuration
+            .background(Color("base"))
+                
     }
 }
 
@@ -25,6 +34,29 @@ struct titleView: ViewModifier {
         content
             .fixedSize()
             .font(.system(size: 60))
-            .offset(y: -150)
+//            .offset(y: -150)
+    }
+}
+
+struct buttonModifier: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .frame(width: 100, height: 30, alignment: .center)
+            .background(RoundedRectangle(cornerRadius: 5).fill(Color("base")))
+            .foregroundColor(Color("input"))
+    }
+}
+
+struct textModifier: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .frame(width: 200, height: 20, alignment: .center)
+    }
+}
+
+struct textColor: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .foregroundColor(Color("base"))
     }
 }

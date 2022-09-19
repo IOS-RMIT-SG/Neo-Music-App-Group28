@@ -35,7 +35,7 @@ struct MyTabView: View {
             ProfileView().tabItem{
                 Label("Profile", systemImage: "person.crop.circle")
             }.environmentObject(user)
-        }
+        }.accentColor(.pink)
     }
 }
 

@@ -25,6 +25,13 @@
 		318467AB28D19C6900378B4D /* SongLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318467AA28D19C6900378B4D /* SongLabel.swift */; };
 		31860AB928D86D76009EEAA5 /* QueryTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31860AB828D86D76009EEAA5 /* QueryTag.swift */; };
 		31860ABD28D874D4009EEAA5 /* SongCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31860ABC28D874D4009EEAA5 /* SongCard.swift */; };
+		31860ABF28D89588009EEAA5 /* Mode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31860ABE28D89588009EEAA5 /* Mode.swift */; };
+		31860AC128D895A6009EEAA5 /* UserUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31860AC028D895A6009EEAA5 /* UserUtils.swift */; };
+		31860AC328D895E9009EEAA5 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31860AC228D895E9009EEAA5 /* Settings.swift */; };
+		31860AC528D8960C009EEAA5 /* ButtonTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31860AC428D8960C009EEAA5 /* ButtonTheme.swift */; };
+		31860AC728D896B8009EEAA5 /* FireTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31860AC628D896B8009EEAA5 /* FireTheme.swift */; };
+		31860AC928D896C0009EEAA5 /* IceTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31860AC828D896C0009EEAA5 /* IceTheme.swift */; };
+		31860ACB28D8A0B0009EEAA5 /* BackgroundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31860ACA28D8A0B0009EEAA5 /* BackgroundManager.swift */; };
 		31C9353928C7677E00B4ED1E /* final-ass-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 31C9353828C7677E00B4ED1E /* final-ass-Info.plist */; };
 		31F0E70F28D08DE1005C9CD8 /* MyTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F0E70E28D08DE1005C9CD8 /* MyTabView.swift */; };
 		31F0E71128D08DFF005C9CD8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F0E71028D08DFF005C9CD8 /* HomeView.swift */; };
@@ -53,7 +60,7 @@
 		A9958B8728D33D4B003C3DD6 /* MinimizableView in Frameworks */ = {isa = PBXBuildFile; productRef = A9958B8628D33D4B003C3DD6 /* MinimizableView */; };
 		A9AA86D328C75CDD00512274 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AA86D228C75CDD00512274 /* LoginView.swift */; };
 		A9AA86D528C7650200512274 /* Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AA86D428C7650200512274 /* Modifiers.swift */; };
-		ECDAC9A628C74B34000321F0 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDAC9A528C74B34000321F0 /* Background.swift */; };
+		ECDAC9A628C74B34000321F0 /* PurpleTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDAC9A528C74B34000321F0 /* PurpleTheme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +102,13 @@
 		318467AA28D19C6900378B4D /* SongLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongLabel.swift; sourceTree = "<group>"; };
 		31860AB828D86D76009EEAA5 /* QueryTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryTag.swift; sourceTree = "<group>"; };
 		31860ABC28D874D4009EEAA5 /* SongCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongCard.swift; sourceTree = "<group>"; };
+		31860ABE28D89588009EEAA5 /* Mode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mode.swift; sourceTree = "<group>"; };
+		31860AC028D895A6009EEAA5 /* UserUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserUtils.swift; sourceTree = "<group>"; };
+		31860AC228D895E9009EEAA5 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		31860AC428D8960C009EEAA5 /* ButtonTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTheme.swift; sourceTree = "<group>"; };
+		31860AC628D896B8009EEAA5 /* FireTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireTheme.swift; sourceTree = "<group>"; };
+		31860AC828D896C0009EEAA5 /* IceTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceTheme.swift; sourceTree = "<group>"; };
+		31860ACA28D8A0B0009EEAA5 /* BackgroundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundManager.swift; sourceTree = "<group>"; };
 		31C9353828C7677E00B4ED1E /* final-ass-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "final-ass-Info.plist"; sourceTree = "<group>"; };
 		31F0E70E28D08DE1005C9CD8 /* MyTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabView.swift; sourceTree = "<group>"; };
 		31F0E71028D08DFF005C9CD8 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -106,7 +120,7 @@
 		A98EED8128C9F1C10048D394 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A9AA86D228C75CDD00512274 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		A9AA86D428C7650200512274 /* Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifiers.swift; sourceTree = "<group>"; };
-		ECDAC9A528C74B34000321F0 /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
+		ECDAC9A528C74B34000321F0 /* PurpleTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurpleTheme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,7 +233,11 @@
 				318467A928D19C4800378B4D /* Items */,
 				31F0E71628D09065005C9CD8 /* Music */,
 				31F0E71728D09091005C9CD8 /* Authentication */,
-				ECDAC9A528C74B34000321F0 /* Background.swift */,
+				ECDAC9A528C74B34000321F0 /* PurpleTheme.swift */,
+				31860AC828D896C0009EEAA5 /* IceTheme.swift */,
+				31860AC628D896B8009EEAA5 /* FireTheme.swift */,
+				31860AC428D8960C009EEAA5 /* ButtonTheme.swift */,
+				31860AC228D895E9009EEAA5 /* Settings.swift */,
 				31F0E70E28D08DE1005C9CD8 /* MyTabView.swift */,
 				31F0E71028D08DFF005C9CD8 /* HomeView.swift */,
 				31F0E71228D08E25005C9CD8 /* MyFavoriteView.swift */,
@@ -235,6 +253,7 @@
 				3134825328C757D500959659 /* AudioManager.swift */,
 				31F0E71C28D09500005C9CD8 /* LocalUser.swift */,
 				318467A528D17C7100378B4D /* DataManager.swift */,
+				31860ACA28D8A0B0009EEAA5 /* BackgroundManager.swift */,
 			);
 			path = ModelView;
 			sourceTree = "<group>";
@@ -245,6 +264,8 @@
 				3134824E28C7504B00959659 /* Song.swift */,
 				3134825028C753B100959659 /* Extensions.swift */,
 				A9AA86D428C7650200512274 /* Modifiers.swift */,
+				31860ABE28D89588009EEAA5 /* Mode.swift */,
+				31860AC028D895A6009EEAA5 /* UserUtils.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -445,25 +466,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				A989B67A28CC82A3001910D1 /* SignupView.swift in Sources */,
+				31860ACB28D8A0B0009EEAA5 /* BackgroundManager.swift in Sources */,
 				31F0E71128D08DFF005C9CD8 /* HomeView.swift in Sources */,
 				3134824F28C7504B00959659 /* Song.swift in Sources */,
 				310B776628C62411003E6E14 /* SongView.swift in Sources */,
-				ECDAC9A628C74B34000321F0 /* Background.swift in Sources */,
+				ECDAC9A628C74B34000321F0 /* PurpleTheme.swift in Sources */,
+				31860AC728D896B8009EEAA5 /* FireTheme.swift in Sources */,
 				31860AB928D86D76009EEAA5 /* QueryTag.swift in Sources */,
 				318467AB28D19C6900378B4D /* SongLabel.swift in Sources */,
 				3134825428C757D500959659 /* AudioManager.swift in Sources */,
 				310B773D28C62280003E6E14 /* ContentView.swift in Sources */,
 				31F0E71528D08F21005C9CD8 /* ProfileView.swift in Sources */,
+				31860AC528D8960C009EEAA5 /* ButtonTheme.swift in Sources */,
 				31F0E70F28D08DE1005C9CD8 /* MyTabView.swift in Sources */,
 				31F0E71D28D09500005C9CD8 /* LocalUser.swift in Sources */,
+				31860AC128D895A6009EEAA5 /* UserUtils.swift in Sources */,
 				310B773B28C62280003E6E14 /* final_assApp.swift in Sources */,
 				A9AA86D328C75CDD00512274 /* LoginView.swift in Sources */,
+				31860AC928D896C0009EEAA5 /* IceTheme.swift in Sources */,
 				3182C55928D6FA2D00C0E93E /* VideoView.swift in Sources */,
 				318467A628D17C7100378B4D /* DataManager.swift in Sources */,
 				31860ABD28D874D4009EEAA5 /* SongCard.swift in Sources */,
+				31860AC328D895E9009EEAA5 /* Settings.swift in Sources */,
 				A9AA86D528C7650200512274 /* Modifiers.swift in Sources */,
 				31F0E71928D09120005C9CD8 /* SongListView.swift in Sources */,
 				31F0E71328D08E25005C9CD8 /* MyFavoriteView.swift in Sources */,
+				31860ABF28D89588009EEAA5 /* Mode.swift in Sources */,
 				3134825128C753B100959659 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

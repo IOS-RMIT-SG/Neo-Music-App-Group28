@@ -40,39 +40,48 @@ struct LoginView: View {
             VStack(alignment: .center, spacing: 30) {
                 Text("NEO MUSIC")
                     .modifier(titleView())
-                VStack {
+                VStack() {
                     //MARK: Username field
-                    TextField(
-                        "User name",
-                        text: $username
-                    )
-                    .modifier(textField())
-                    .disableAutocorrection(true)
+                    HStack(spacing: 10){
+                        Text("Username")
+                        TextField(
+                            "User name",
+                            text: $username
+                        )
+                        .modifier(textField())
+                        .disableAutocorrection(true)
+                        .frame(maxWidth: .infinity, alignment: .trailing)
+                    }
                     
                     //MARK: Password field
-                    SecureField (
-                        "Password",
-                        text: $password
-                    )
-                    .modifier(textField())
-                    .disableAutocorrection(true)
-                }
+                    HStack(spacing: 10){
+                        Text("Password")
+                        SecureField (
+                            "Password",
+                            text: $password
+                        )
+                        .modifier(textField())
+                        .disableAutocorrection(true)
+                        .frame(maxWidth: .infinity, alignment: .trailing)
+                    }
+                }.padding(.horizontal, 10)
                 
                 //MARK: Login bt
                 Text("LOG IN FAIL")
-                    .modifier(textField())
+                    .modifier(textColor())
                     .opacity(logInNotification)
                 
                 Button(action: {
                     logIn()
                 }) {
-                    Text("LOG IN").modifier(textField())
+                    Text("LOG IN").modifier(buttonModifier())
                 }
                 
                 //MARK: Register bt
                 Button("REGISTER") {
                     showPage = true
                 }
+                .modifier(buttonModifier())
             }
         }.fullScreenCover(isPresented: $showPage, content: {
             SignupView()

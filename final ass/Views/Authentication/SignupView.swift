@@ -43,26 +43,37 @@ struct SignupView: View {
                     .modifier(titleView())
                 VStack {
                     //MARK: Username
-                    TextField(
-                        "Type in your username",
-                        text: $username
-                    ).modifier(textField())
-                        .disableAutocorrection(true)
+                    HStack(spacing: 10){
+                        Text("Username")
+                        TextField(
+                            "Type in your username",
+                            text: $username
+                        ).modifier(textField())
+                            .disableAutocorrection(true)
+                            .frame(maxWidth: .infinity, alignment: .trailing)
+                    }
                     
                     //MARK: PAssword
-                    SecureField(
-                        "Type in your password",
-                        text: $password
-                    ).modifier(textField())
-                        .disableAutocorrection(true)
-                    
+                    HStack(spacing: 10){
+                        Text("Password")
+                        SecureField(
+                            "Type in your password",
+                            text: $password
+                        ).modifier(textField())
+                            .disableAutocorrection(true)
+                            .frame(maxWidth: .infinity, alignment: .trailing)
+                    }
                     //MARK: Repeat password
-                    SecureField(
-                        "Type your password again",
-                        text: $passVerification
-                    ).modifier(textField())
-                        .disableAutocorrection(true)
-                }
+                    HStack(spacing: 10) {
+                        Text("Repeat Pass")
+                        SecureField(
+                            "Type your password again",
+                            text: $passVerification
+                        ).modifier(textField())
+                            .disableAutocorrection(true)
+                            .frame(maxWidth: .infinity, alignment: .trailing)
+                    }
+                }.padding(.horizontal, 10)
                 
                 
                 Text("Password does not match")
@@ -74,13 +85,12 @@ struct SignupView: View {
                     signUp()
                 }) {
                     Text("SIGN UP")
-                        .modifier(textField())
-                }
+                }.modifier(buttonModifier())
                 
                 //MARK: Cancel bt
                 Button("CANCEL") {
                     dismiss()
-                }
+                }.modifier(buttonModifier())
             }
         }
     }
