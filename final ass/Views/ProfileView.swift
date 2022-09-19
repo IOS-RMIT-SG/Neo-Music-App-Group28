@@ -16,6 +16,7 @@ struct ProfileView: View {
     
     @State private var showPage = false
     @State private var authPages: AuthPages? = .Login
+    @State private var settings = false
     
     var body: some View {
         ZStack{
@@ -36,11 +37,20 @@ struct ProfileView: View {
                     Text("\(user.username)")
                         .font(.system(size: 20))
                         .padding()  
-                    Text("Setting")
-                        .padding(40)
+                    Button (action: {
+                        settings = true
+                    }, label: {
+                        Text("SETTINGS")
+                    })
+                    .modifier(buttonModifier())
+                    .padding()
+                    .sheet(isPresented: $settings, content: {
+                        Settings()
+                    })
                     Button("LOGOUT") {
                         user.username = ""
                         }
+                    .modifier(buttonModifier())
                     }
             }
         }

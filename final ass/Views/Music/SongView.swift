@@ -89,6 +89,7 @@ struct SongView: View {
                 VideoView(song: song)
             })
             .onAppear{
+                dataManager.isAdded = false
                 if (user.username != "") {
                     dataManager.checkIsAdded(user: user.username, song: song)
                 }
