@@ -1,9 +1,12 @@
-//
-//  SongView.swift
-//  final ass
-//
-//  Created by Duc, Nguyen Trung on 05/09/2022.
-//
+/*
+  RMIT University Vietnam
+  Course: COSC2659 iOS Development
+  Semester: 2022B
+  Assessment: Assignment 3
+  Author: Group 28
+  Created  date: 05/09/2022
+  Last modified: 20/09/2022
+*/
 
 import SwiftUI
 
@@ -98,7 +101,6 @@ struct SongView: View {
 }
 
 struct SongView_Previews: PreviewProvider {
-    static let songVM = SongViewModel(song: Song.data[1])
     static var previews: some View {
         SongView(song: Song.data[1]).environmentObject(AudioManager())
     }

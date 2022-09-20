@@ -1,9 +1,12 @@
-//
-//  MyFavoriteView.swift
-//  final ass
-//
-//  Created by Duc, Nguyen Trung on 13/09/2022.
-//
+/*
+ RMIT University Vietnam
+ Course: COSC2659 iOS Development
+ Semester: 2022B
+ Assessment: Assignment 3
+ Author: Group 28
+ Created  date: 05/09/2022
+ Last modified: 20/09/2022
+ */
 
 import SwiftUI
 
@@ -23,11 +26,11 @@ struct MyFavoriteView: View {
             } else {
                 //MARK: favorite songs
                 ZStack {
-                    if dataManager.songs.isEmpty {
-                        ProgressView()
+                    if dataManager.favoriteSongs.isEmpty {
+                        Text("Add songs to your library")
                     } else {
                         NavigationView {
-                            List(dataManager.songs) { song in
+                            List(dataManager.favoriteSongs) { song in
                                 SongLabel(song: song, action: {
                                     changePage = true
                                     self.song = song

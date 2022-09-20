@@ -1,9 +1,12 @@
-//
-//  DataManager.swift
-//  final ass
-//
-//  Created by Duc, Nguyen Trung on 14/09/2022.
-//
+/*
+  RMIT University Vietnam
+  Course: COSC2659 iOS Development
+  Semester: 2022B
+  Assessment: Assignment 3
+  Author: Group 28
+  Created  date: 05/09/2022
+  Last modified: 20/09/2022
+*/
 
 import Foundation
 import Firebase
@@ -16,6 +19,7 @@ enum SongAttr: String{
 
 class DataManager: ObservableObject {
     @Published var songs: [Song] = []
+    @Published var favoriteSongs: [Song] = []
     @Published var popularSongs: ArraySlice<Song> = []
     @Published var filteredSongs: [Song] = []
     @Published var isAdded = false
@@ -78,20 +82,22 @@ class DataManager: ObservableObject {
             }.sorted {
                 $0.popularity > $1.popularity
             }
-            self.popularSongs = self.songs[0...3]
+            if self.songs.count >= 4 {
+                self.popularSongs = self.songs[0...3]
+            }
         }
     }
     
     //MARK: Fetch all favorite songs
     func fetchFavorite(user: String) {
-        songs.removeAll()
+        favoriteSongs.removeAll()
         db.collection("\(user) songs").addSnapshotListener{(querySnapshot, error) in
             guard let documents = querySnapshot?.documents else {
                 print("No documents")
                 return
             }
             
-            self.songs = documents.map{(queryDocumentSnapshot) -> Song in
+            self.favoriteSongs = documents.map{(queryDocumentSnapshot) -> Song in
                 let data = queryDocumentSnapshot.data()
                 
                 let id = queryDocumentSnapshot.documentID

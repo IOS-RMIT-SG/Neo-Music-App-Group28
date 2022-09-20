@@ -1,20 +1,14 @@
-//
-//  Song.swift
-//  final ass
-//
-//  Created by Duc, Nguyen Trung on 06/09/2022.
-//
+/*
+  RMIT University Vietnam
+  Course: COSC2659 iOS Development
+  Semester: 2022B
+  Assessment: Assignment 3
+  Author: Group 28
+  Created  date: 05/09/2022
+  Last modified: 20/09/2022
+*/
 
 import Foundation
-
-final class SongViewModel: ObservableObject {
-    private(set) var song: Song
-    
-    
-    init(song: Song) {
-        self.song = song
-    }
-}
 
 struct Song: Identifiable, Equatable {
     let id: String

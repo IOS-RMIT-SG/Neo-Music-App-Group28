@@ -1,9 +1,12 @@
-//
-//  HomeView.swift
-//  final ass
-//
-//  Created by Duc, Nguyen Trung on 13/09/2022.
-//
+/*
+ RMIT University Vietnam
+ Course: COSC2659 iOS Development
+ Semester: 2022B
+ Assessment: Assignment 3
+ Author: Group 28
+ Created  date: 05/09/2022
+ Last modified: 20/09/2022
+ */
 
 import SwiftUI
 
@@ -19,7 +22,7 @@ struct HomeView: View {
         VStack {
             ScrollView {
                 //MARK: Title
-                Text("Top 4 popular songs").font(.title)
+                Text("Top 4 popular songs").font(.title).bold().padding(.top, 10)
                 
                 //MARK: Top 4 songs
                 if dataManager.popularSongs.isEmpty {
@@ -35,7 +38,7 @@ struct HomeView: View {
                     }.padding()
                 }
                 
-                Text("Filter songs")
+                Text("Filter songs").bold()
                 
                 //MARK: FIlter bar
                 HStack {

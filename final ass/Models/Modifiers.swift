@@ -1,9 +1,12 @@
-//
-//  Modifiers.swift
-//  final ass
-//
-//  Created by Tri, Luu Huynh on 06/09/2022.
-//
+/*
+  RMIT University Vietnam
+  Course: COSC2659 iOS Development
+  Semester: 2022B
+  Assessment: Assignment 3
+  Author: Group 28
+  Created  date: 05/09/2022
+  Last modified: 20/09/2022
+*/
 
 import Foundation
 import SwiftUI
@@ -11,6 +14,7 @@ import SwiftUI
 private var textFieldWidth: CGFloat = 250
 private var textFieldHeight: CGFloat = 20
 
+//MARK: Text field
 struct textField: ViewModifier {
     func body(content: Content) -> some View {
         content
@@ -21,6 +25,7 @@ struct textField: ViewModifier {
     }
 }
 
+//MARK: Custom text field
 struct CustomTextFieldStyle: TextFieldStyle {
     func _body(configuration: TextField<Self._Label>) -> some View {
         configuration
@@ -29,15 +34,16 @@ struct CustomTextFieldStyle: TextFieldStyle {
     }
 }
 
+//MARK: Title view
 struct titleView: ViewModifier {
     func body(content: Content) -> some View {
         content
             .fixedSize()
             .font(.system(size: 60))
-//            .offset(y: -150)
     }
 }
 
+//MARK: Button view
 struct buttonModifier: ViewModifier {
     func body(content: Content) -> some View {
         content
@@ -47,6 +53,7 @@ struct buttonModifier: ViewModifier {
     }
 }
 
+//MARK: Text view
 struct textModifier: ViewModifier {
     func body(content: Content) -> some View {
         content
@@ -54,6 +61,7 @@ struct textModifier: ViewModifier {
     }
 }
 
+//MARK: Text color
 struct textColor: ViewModifier {
     func body(content: Content) -> some View {
         content
